@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+html,body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-nav .navbar-nav{
+    margin-left: auto;
+}
+
+.custom-nav{
+    background-color: #ff000000 !important;
+}
+
+#showcase{
+    position: relative;
+    background: url('../img/header.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.custom-nav .navbar-nav .nav-link{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+
+.custom-nav .navbar-nav .nav-item{
+    margin: 0 20px;
+}
+
+.explore-area{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn-main{
+    background: #ffffff;
+    border: none;
+    font-size: 14px;
+    padding: 12px 40px;
+}
+
+.explore-area h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.explore-area .btn-main{
+    margin-top: 10px
+}
+
+.trends{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.trends{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+#banner .container-fluid .row{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    height: 300px;   
+    position: relative;
+}
+
+#banner h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;    
+}
+
+#banner{
+    margin-top: 40px;
+}
+
+
+#bottom {
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+#bottom img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-card{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.img-card::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+}
+
+footer{
+    background-color:#304A5C;
+    color: #ffffff;
+}
+
+.img-card h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+footer .col-4{
+    padding: 40px 20px;
+}
+
+footer .col-4 .gibrish{
+    margin-top: 25px;
+    font-size: 11px;
+}
+
+footer .col-4 ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+
+footer .col-4 h3{
+    margin-bottom: 20px;
+}
+
+footer .col-4 ul{
+    padding-left: 0;
+}
+
+.bottom-footer{
+    background-color:#253846;
+}
+
+.bottom-footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+@media(max-width:767px){
+    .explore-area h1{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 500px){
+    .explore-area h1{
+        font-size: 25px;
+    }
+
+    #showcase{
+        background: url('https://cdn.pixabay.com/photo/2021/02/26/20/19/sisters-6053044_960_720.jpg') no-repeat center;
+    }
+
+    .explore-area h4{
+        display: none;
+    }
+
+    
+}
+
+@media(max-width: 300px){
+    .explore-area .btn-main{
+        display: none;
+    }
+}

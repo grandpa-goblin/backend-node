@@ -1,0 +1,124 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/assets/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='/assets/css/style.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous')
+section#showcase
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.custom-nav
+    .container
+      a.navbar-brand(href='#')
+        img(src='/assets/img/logo.svg' alt='')
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarText.collapse.navbar-collapse
+        ul.navbar-nav.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link(aria-current='page' href='#') Home
+          li.nav-item
+            a.nav-link(href='#') About Us
+          li.nav-item
+            a.nav-link(href='#') Contact Us
+          li.nav-item
+            a.nav-link(href='#')
+              i.fas.fa-shopping-cart
+  .explore-area
+    if isFound
+      h1#main-text Summer Collection ={name}
+    else 
+      h1#main-text Not Found
+    h4 Upto 70% OFF
+    button.btn-main(onclick="updateTitle('up')") Count Up
+    button.btn-main2(onclick="updateTitle('down')") Count Down
+section
+  .trends
+    h2 trending now
+  .container
+    .row
+      .col-4
+        .card
+          img.card-img-top(src='/assets/img/pexels-spencer-selover-428340@2x.jpg' alt='Card image cap')
+          .card-body
+            h5.card-title Card title
+            p.card-text
+              | Some quick example text to build on the card title and make up the bulk
+              | of the card&apos;s content.
+            a#cart-button1.btn.btn-primary(onclick='addToCart(1)') Add to cart
+            a#remove-cart-button1.btn.btn-danger(onclick='removeFromCart(1)' style='display: none;') Remove from cart
+            #cartDetail1
+      .col-4
+        .card
+          img.card-img-top(src='/assets/img/pexels-spencer-selover-428340@2x.jpg' alt='Card image cap')
+          .card-body
+            h5.card-title Card title
+            p.card-text
+              | Some quick example text to build on the card title and make up the bulk
+              | of the card&apos;s content.
+            a#cart-button2.btn.btn-primary(onclick='addToCart(2)') Add to cart
+            a#remove-cart-button2.btn.btn-danger(onclick='removeFromCart(2)' style='display: none;') Remove from cart
+            #cartDetail2
+      .col-4
+        .card
+          img.card-img-top(src='/assets/img/pexels-spencer-selover-428340@2x.jpg' alt='Card image cap')
+          .card-body
+            h5.card-title Card title
+            p.card-text
+              | Some quick example text to build on the card title and make up the
+              | bulk of the card&apos;s content.
+            a#cart-button3.btn.btn-primary(onclick='addToCart(3)') Add to cart
+            a#remove-cart-button3.btn.btn-danger(onclick='removeFromCart(3)' style='display: none;') Remove from cart
+            #cartDetail3
+section#banner
+  .container-fluid
+    .row
+      .col-6
+        h1
+          | clothing 
+          br
+          | 50% off
+      .col-6
+section#bottom
+  .container
+    .row
+      .col-6
+        .img-card
+          h1 TINY MEN
+          img(src='/assets/img/pexels-brett-sayles-1073083@2x.jpg' alt='')
+      .col-6
+        .img-card
+          h1 NOT MEN
+          img(src='/assets/img/pexels-pixabay-206434@2x.jpg' alt='')
+      .col-6
+        .img-card
+          h1 MEN
+          img(src='/assets/img/pexels-spencer-selover-428340@2x.jpg' alt='')
+      .col-6
+        .img-card
+          h1 ALSO MEN
+          img(src='/assets/img/pexels-spencer-selover-428340@2x.jpg' alt='')
+footer
+  .container
+    .row
+      .col-4
+        img(src='/assets/img/logo.svg' alt='')
+        p.gibrish Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, amet.
+      .col-4
+        h3 QUICK LINKS
+        ul
+          li Home
+          li About US
+          li Contact Us
+      .col-4
+        h3 CONTACT US
+        ul
+          li
+            | 24993472401
+          li
+            | 419851971377
+  .bottom-footer
+    p Copyright &copy; 2021 hanger - All rights reserved
+script(src='/assets/multiplication.js')
+script(src='/assets/bootstrap/js/bootstrap.min.js')
